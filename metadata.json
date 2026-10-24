@@ -1,0 +1,6 @@
+{
+  "name": "Premi — 16th Birthday Storybook",
+  "description": "An interactive, elegant 16th birthday storybook with a 3D celebration cake, paper airplane, and digital scrapbook.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

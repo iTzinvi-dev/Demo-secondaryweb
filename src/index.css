@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-qurov: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+    --font-handwritten: 'Caveat', cursive, serif;
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FAF8F5;
+    color: #201D1B;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-qurov {
+    font-family: var(--font-qurov);
+  }
+
+  .font-handwritten {
+    font-family: var(--font-handwritten);
+  }
+
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+@keyframes gentleFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes petalDrift {
+  0% {
+    transform: translateY(-10vh) translateX(0) rotate(0deg) scale(0.9);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.65;
+  }
+  50% {
+    transform: translateY(50vh) translateX(22px) rotate(140deg) scale(1);
+    opacity: 0.6;
+  }
+  85% {
+    opacity: 0.45;
+  }
+  100% {
+    transform: translateY(110vh) translateX(-18px) rotate(280deg) scale(0.85);
+    opacity: 0;
+  }
+}
+
+.animate-gentle-float {
+  animation: gentleFloat 4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-gentle-float,
+  .animate-petal-drift {
+    animation: none !important;
+  }
+}
