@@ -239,10 +239,7 @@ export default function App() {
               </div>
 
               <div className="mt-8 border-t border-[#201D1B]/8 pt-6">
-                <p className="font-serif text-sm font-semibold tracking-wide text-[#E11D48]">
-                  {premiStory.birthdayWish.signature}
-                </p>
-                <p className="mt-1 font-handwritten text-2xl text-[#201D1B]">
+                <p className="font-handwritten text-2xl text-[#201D1B]">
                   {premiStory.birthdayWish.author}
                 </p>
               </div>
